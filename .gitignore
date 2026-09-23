@@ -1,4 +1,6 @@
 node_modules/
+dist/
+.vercel/
 .env
 .env.*
 !.env.example
@@ -8,3 +10,5 @@ qa/**/*.jpg
 qa/**/*.webp
 .DS_Store
 Thumbs.db
+
+.vercel
