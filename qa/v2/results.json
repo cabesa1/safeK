@@ -1,0 +1,389 @@
+{
+  "pages": 19,
+  "layouts": 76,
+  "failures": [],
+  "errors": [],
+  "checks": [
+    {
+      "page": "index",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "index",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "index",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "index",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "sobre",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "sobre",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "sobre",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "sobre",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "como-funciona",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "como-funciona",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "como-funciona",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "como-funciona",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "onde-usar",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "onde-usar",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "onde-usar",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "onde-usar",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "imprensa",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "imprensa",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "imprensa",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "imprensa",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "contato",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "contato",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "contato",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "contato",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "duvidas",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "duvidas",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "duvidas",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "duvidas",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "escolas",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "escolas",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "escolas",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "escolas",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "universidades",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "universidades",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "universidades",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "universidades",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "empresas",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "empresas",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "empresas",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "empresas",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "eventos",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "eventos",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "eventos",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "eventos",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "festas",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "festas",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "festas",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "festas",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "tribunais",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "tribunais",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "tribunais",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "tribunais",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "acampamentos",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "acampamentos",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "acampamentos",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "acampamentos",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "hospitais",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "hospitais",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "hospitais",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "hospitais",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "celulares-nas-escolas",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "celulares-nas-escolas",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "celulares-nas-escolas",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "celulares-nas-escolas",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "educacao-e-tecnologia",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "educacao-e-tecnologia",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "educacao-e-tecnologia",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "educacao-e-tecnologia",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "festas-sem-celulares",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "festas-sem-celulares",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "festas-sem-celulares",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "festas-sem-celulares",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "presenca-nos-shows",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "presenca-nos-shows",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "presenca-nos-shows",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "presenca-nos-shows",
+      "width": 1440,
+      "pass": true
+    }
+  ],
+  "interactions": "Menu desktop e móvel, oito aplicações, filtros e busca, FAQ, seleção de contexto, validação, mensagem editável, link de e-mail, redirecionamento e arquivo local. Nenhuma mensagem enviada."
+}

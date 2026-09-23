@@ -1,0 +1,58 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "h1": 1,
+      "missingImages": [],
+      "brokenAnchors": 0
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "missingImages": [],
+      "brokenAnchors": 0
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "h1": 1,
+      "missingImages": [],
+      "brokenAnchors": 0
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "h1": 1,
+      "missingImages": [],
+      "brokenAnchors": 0
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "h1": 1,
+      "missingImages": [],
+      "brokenAnchors": 0
+    },
+    {
+      "width": 1920,
+      "scrollWidth": 1920,
+      "h1": 1,
+      "missingImages": [],
+      "brokenAnchors": 0
+    }
+  ],
+  "errors": [],
+  "offline": true,
+  "checked": [
+    "menu open, Escape and anchor close",
+    "three product steps",
+    "FAQ",
+    "segment preselection",
+    "native form validation",
+    "mailto draft contents; no email sent",
+    "images and anchors",
+    "self-contained offline file"
+  ]
+}
