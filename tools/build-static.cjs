@@ -4,6 +4,7 @@ const root = path.resolve(__dirname, '..');
 const out = path.join(root, 'dist');
 fs.mkdirSync(out, { recursive: true });
 for (const entry of fs.readdirSync(root, { withFileTypes: true })) {
+  if (['dist', '.vercel', '.git', 'node_modules', 'qa'].includes(entry.name)) continue;
   const source = path.join(root, entry.name);
   if (entry.isFile() && (entry.name.endsWith('.html') || ['styles.css', 'app.js'].includes(entry.name))) {
     fs.copyFileSync(source, path.join(out, entry.name));
