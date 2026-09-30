@@ -27,25 +27,32 @@
     document.querySelector('#reset-filters').addEventListener('click',()=>{search.value='';document.querySelector('[data-filter="all"]').click();search.focus();});
   }
 
+  const mapChooser=document.querySelector('#map-chooser');
+  const mapTrigger=document.querySelector('[data-map-choose]');
+  if(mapChooser && mapTrigger && typeof mapChooser.showModal==='function'){
+    mapTrigger.addEventListener('click',event=>{event.preventDefault();mapChooser.showModal();document.body.classList.add('map-open');});
+    mapChooser.querySelector('[data-map-close]').addEventListener('click',()=>mapChooser.close());
+    mapChooser.addEventListener('click',event=>{if(event.target===mapChooser){const b=mapChooser.getBoundingClientRect();if(event.clientX<b.left||event.clientX>b.right||event.clientY<b.top||event.clientY>b.bottom)mapChooser.close();}});
+    mapChooser.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mapChooser.close()));
+    mapChooser.addEventListener('close',()=>{document.body.classList.remove('map-open');mapTrigger.focus({preventScroll:true});});
+  }
+
   const form=document.querySelector('#contact-form');
   if(form){
     const segment=form.querySelector('#segment');
     const selected=new URLSearchParams(location.search).get('ambiente');
     if([...segment.options].some(o=>o.value===selected))segment.value=selected;
     const draft=document.querySelector('#draft-text');
-    let subject='Conhecer a SAFE-K';
-    const updateDraftLink=()=>{document.querySelector('#draft-email').href=`mailto:safek@safek.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(draft.value)}`;};
+    let subject='Solicitação de demonstração SAFE-K';
+    const updateDraftLink=()=>{document.querySelector('#draft-email').href=`mailto:safek@globalk.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(draft.value)}`;};
     draft.addEventListener('input',updateDraftLink);
     form.addEventListener('submit',event=>{
       event.preventDefault();if(!form.reportValidity())return;
-      const data=new FormData(form);subject='SAFE-K — '+String(data.get('institution')).trim();
-      draft.value=`Olá, equipe SAFE-K!\n\nGostaria de conhecer a solução para o meu espaço.\n\nNome: ${String(data.get('name')).trim()}\nE-mail: ${data.get('email')}\nInstituição: ${String(data.get('institution')).trim()}\nAmbiente: ${data.get('segment')}\nParticipantes estimados: ${data.get('participants')||'A definir'}\n\n${String(data.get('message')).trim()}`;
-      updateDraftLink();document.querySelector('#message-preview').hidden=false;document.querySelector('#form-status').textContent='Mensagem preparada. O envio será feito pelo seu aplicativo de e-mail.';draft.focus({preventScroll:true});document.querySelector('#message-preview').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'center'});
+      const data=new FormData(form);subject='Demonstração SAFE-K — '+String(data.get('institution')).trim();
+      draft.value=`Olá, equipe SAFE-K!\n\nGostaria de solicitar uma demonstração da solução para o meu espaço.\n\nNome: ${String(data.get('name')).trim()}\nE-mail: ${data.get('email')}\nInstituição: ${String(data.get('institution')).trim()}\nAmbiente: ${data.get('segment')}\nParticipantes estimados: ${data.get('participants')||'A definir'}\n\n${String(data.get('message')).trim()}`;
+      updateDraftLink();document.querySelector('#message-preview').hidden=false;document.querySelector('#form-status').textContent='O pedido foi preparado no aplicativo de e-mail. Revise e confirme o envio por lá.';document.querySelector('#message-preview').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'center'});document.querySelector('#draft-email').click();
     });
-    document.querySelector('#copy-message').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(draft.value);document.querySelector('#form-status').textContent='Mensagem copiada. Cole no seu aplicativo de e-mail e envie para safek@safek.com.br.';}catch{draft.focus();draft.select();document.querySelector('#form-status').textContent='Selecione e copie a mensagem acima para enviar a safek@safek.com.br.';}});
+    document.querySelector('#copy-message').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(draft.value);document.querySelector('#form-status').textContent='Mensagem copiada. Cole no seu aplicativo de e-mail e envie para safek@globalk.com.br.';}catch{draft.focus();draft.select();document.querySelector('#form-status').textContent='Selecione e copie a mensagem acima para enviar a safek@globalk.com.br.';}});
   }
 
-  const visual=document.querySelector('.hero-visual');
-  const motion=matchMedia('(prefers-reduced-motion: reduce)');
-  if(visual){const photo=visual.querySelector('.hero-photo-frame');const fine=matchMedia('(hover:hover) and (pointer:fine)');let frame=0;visual.addEventListener('pointermove',event=>{if(motion.matches||!fine.matches)return;if(frame)cancelAnimationFrame(frame);frame=requestAnimationFrame(()=>{const box=visual.getBoundingClientRect();const x=(event.clientX-box.left)/box.width-.5;const y=(event.clientY-box.top)/box.height-.5;photo.style.transform=`rotate(1.5deg) rotateY(${x*4}deg) rotateX(${-y*3}deg)`;});});visual.addEventListener('pointerleave',()=>{if(frame)cancelAnimationFrame(frame);photo.style.transform='';});motion.addEventListener('change',()=>{if(motion.matches)photo.style.transform='';});}
 })();
