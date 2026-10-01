@@ -1,6 +1,6 @@
 {
-  "pages": 16,
-  "layouts": 64,
+  "pages": 15,
+  "layouts": 60,
   "failures": [],
   "errors": [],
   "checks": [
@@ -181,26 +181,6 @@
     },
     {
       "page": "escolas",
-      "width": 1440,
-      "pass": true
-    },
-    {
-      "page": "universidades",
-      "width": 320,
-      "pass": true
-    },
-    {
-      "page": "universidades",
-      "width": 390,
-      "pass": true
-    },
-    {
-      "page": "universidades",
-      "width": 768,
-      "pass": true
-    },
-    {
-      "page": "universidades",
       "width": 1440,
       "pass": true
     },

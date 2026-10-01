@@ -2,5 +2,107 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "buildCommand": "node build.cjs && node tools/build-static.cjs",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/universidades.html",
+      "destination": "/onde-usar.html",
+      "permanent": true
+    },
+    {
+      "source": "/festas.html",
+      "destination": "/eventos.html",
+      "permanent": true
+    },
+    {
+      "source": "/tribunais.html",
+      "destination": "/onde-usar.html",
+      "permanent": true
+    },
+    {
+      "source": "/acampamentos.html",
+      "destination": "/onde-usar.html",
+      "permanent": true
+    },
+    {
+      "source": "/hospitais.html",
+      "destination": "/onde-usar.html",
+      "permanent": true
+    },
+    {
+      "source": "/sobre-nos",
+      "destination": "/sobre.html",
+      "permanent": true
+    },
+    {
+      "source": "/escolas",
+      "destination": "/escolas.html",
+      "permanent": true
+    },
+    {
+      "source": "/empresas",
+      "destination": "/empresas.html",
+      "permanent": true
+    },
+    {
+      "source": "/eventos",
+      "destination": "/eventos.html",
+      "permanent": true
+    },
+    {
+      "source": "/onde-usar",
+      "destination": "/onde-usar.html",
+      "permanent": true
+    },
+    {
+      "source": "/universidades",
+      "destination": "/onde-usar.html",
+      "permanent": true
+    },
+    {
+      "source": "/festas",
+      "destination": "/eventos.html",
+      "permanent": true
+    },
+    {
+      "source": "/tribunais",
+      "destination": "/onde-usar.html",
+      "permanent": true
+    },
+    {
+      "source": "/acampamentos",
+      "destination": "/onde-usar.html",
+      "permanent": true
+    },
+    {
+      "source": "/hospitais",
+      "destination": "/onde-usar.html",
+      "permanent": true
+    },
+    {
+      "source": "/restricao-ao-uso-do-celular-nas-escolas-ja-esta-valendo",
+      "destination": "/celulares-nas-escolas.html",
+      "permanent": true
+    },
+    {
+      "source": "/proibicao-de-celulares-nas-escolas-levanta-debate-sobre-educacao",
+      "destination": "/educacao-e-tecnologia.html",
+      "permanent": true
+    },
+    {
+      "source": "/convidando-seus-convidados-para-uma-festa-sem-convidar-seus-celulares",
+      "destination": "/festas-sem-celulares.html",
+      "permanent": true
+    },
+    {
+      "source": "/dentro-do-juke-joint-perfeito-e-misterioso-de-dave-chappelle-no-all-star-weekend",
+      "destination": "/presenca-nos-shows.html",
+      "permanent": true
+    }
+  ]
 }

@@ -28,6 +28,16 @@
   }
 
   const mapChooser=document.querySelector('#map-chooser');
+  const mapLoad=document.querySelector('[data-map-load]');
+  if(mapLoad)mapLoad.addEventListener('click',()=>{
+    const frame=document.createElement('iframe');
+    frame.title='Localização do Shopping Panorâmico em Sorocaba';
+    frame.src='https://maps.google.com/maps?q=-23.5286945,-47.4520011&z=16&output=embed';
+    frame.referrerPolicy='no-referrer-when-downgrade';
+    frame.setAttribute('allowfullscreen','');
+    document.querySelector('[data-map-container]').replaceChildren(frame);
+    frame.focus();
+  });
   const mapTrigger=document.querySelector('[data-map-choose]');
   if(mapChooser && mapTrigger && typeof mapChooser.showModal==='function'){
     mapTrigger.addEventListener('click',event=>{event.preventDefault();mapChooser.showModal();document.body.classList.add('map-open');});

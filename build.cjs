@@ -1,14 +1,21 @@
 const fs=require('node:fs'),path=require('node:path');
 const views=require('./src/templates.cjs');
 const {applications,articles}=require('./src/content.cjs');
+const seo=require('./src/seo.cjs');
 const pages={index:views.home(),sobre:views.about(),'como-funciona':views.how(),'onde-usar':views.applicationsPage(),imprensa:views.press(),contato:views.contact(),duvidas:views.faqPage(),privacidade:views.privacy()};
 for(const item of applications)pages[item.slug]=views.applicationPage(item);
 for(const item of articles)pages[item.slug]=views.article(item);
-for(const [name,html] of Object.entries(pages))fs.writeFileSync(path.join(__dirname,name+'.html'),html);
-const retired={festas:'eventos',tribunais:'onde-usar',acampamentos:'onde-usar',hospitais:'onde-usar'};
+for(const [name,html] of Object.entries(pages))fs.writeFileSync(path.join(__dirname,name+'.html'),seo.enrich(name,html));
+fs.writeFileSync(path.join(__dirname,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+Object.keys(pages).map(name=>`  <url><loc>${seo.url(name)}</loc></url>`).join('\n')+'\n</urlset>\n');
+fs.writeFileSync(path.join(__dirname,'robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${seo.origin}/sitemap.xml\n`);
+const retired={universidades:'onde-usar',festas:'eventos',tribunais:'onde-usar',acampamentos:'onde-usar',hospitais:'onde-usar'};
 for(const [from,to] of Object.entries(retired))fs.writeFileSync(path.join(__dirname,from+'.html'),`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=${to}.html"><title>SAFE-K</title></head><body><a href="${to}.html">Continuar para as aplicações SAFE-K</a></body></html>`);
 const aliases={'sobre-nos':'sobre',...Object.fromEntries(applications.map(a=>[a.slug,a.slug])),'onde-usar':'onde-usar',...retired};
 for(const a of articles)aliases[new URL(a.original).pathname.split('/').filter(Boolean)[0]]=a.slug;
 for(const [from,to] of Object.entries(aliases)){const dir=path.join(__dirname,from);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=../${to}.html"><title>SAFE-K</title></head><body><a href="../${to}.html">Acessar a página SAFE-K</a></body></html>`);}
 fs.writeFileSync(path.join(__dirname,'research','pages.json'),JSON.stringify(Object.keys(pages),null,2));
+const configPath=path.join(__dirname,'vercel.json');
+const config=JSON.parse(fs.readFileSync(configPath,'utf8'));
+config.redirects=[{source:'/index.html',destination:'/',permanent:true},...Object.entries(retired).map(([from,to])=>({source:`/${from}.html`,destination:`/${to}.html`,permanent:true})),...Object.entries(aliases).map(([from,to])=>({source:`/${from}`,destination:`/${to}.html`,permanent:true}))];
+fs.writeFileSync(configPath,JSON.stringify(config,null,2)+'\n');
 console.log(`${Object.keys(pages).length} páginas geradas. ${Object.keys(aliases).length} endereços anteriores preservados.`);

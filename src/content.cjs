@@ -13,19 +13,6 @@ const applications = [
   cta:'Vamos pensar na rotina da sua escola?'
  },
  {
-  slug:'universidades',name:'Universidades',group:'educacao',category:'Ensino superior',icon:'graduation',
-  short:'Concentração para estudar. Presença para trocar ideias.',
-  title:'Conhecimento pede presença.',
-  lead:'Das bibliotecas aos auditórios, a SAFE-K ajuda a criar períodos de concentração e participação na vida acadêmica, sem recolher os aparelhos dos estudantes.',
-  intro:'Mais espaço para ideias que vão além da tela.',
-  paragraphs:['Uma leitura aprofundada, uma discussão em seminário ou uma avaliação exigem atenção. A instituição pode organizar espaços e momentos em que o uso do celular fica em pausa.','A aplicação da SAFE-K acompanha as orientações da universidade. Os estudantes mantêm seus dispositivos, enquanto os pontos de desbloqueio dão suporte ao acesso nos locais definidos.'],
-  benefits:[['Estudo com menos interrupções','Uma rotina de atenção em bibliotecas, salas de estudo e atividades de pesquisa.'],['Participação em encontros','Mais disponibilidade para acompanhar seminários, palestras e discussões em grupo.'],['Organização em avaliações','Um procedimento de guarda que pode apoiar as regras definidas pela instituição.']],
-  spaces:['Bibliotecas e salas de estudo','Auditórios, palestras e seminários','Salas de avaliação'],
-  process:['Defina as atividades e os espaços em que a solução será utilizada.','Oriente os participantes sobre a bolsa e os pontos de desbloqueio.','Mantenha uma equipe de referência para dúvidas e necessidades de acesso.'],
-  faqs:[['A solução precisa ser usada em todo o campus?','A universidade pode definir as atividades, áreas e períodos de aplicação conforme sua realidade.'],['É possível utilizar em uma atividade pontual?','A proposta pode ser avaliada para seminários, encontros e avaliações específicos. Converse com a equipe sobre o formato e o público esperado.']],
-  cta:'Mais presença na sua comunidade acadêmica.'
- },
- {
   slug:'empresas',name:'Empresas',group:'trabalho',category:'Ambiente de trabalho',icon:'briefcase',
   short:'Reuniões com atenção. Equipes mais conectadas.',
   title:'O foco está nas pessoas. E nas ideias.',
@@ -58,7 +45,7 @@ const faqs=[
  ['Como a bolsa é desbloqueada?','Basta encostar a bolsa em uma base de desbloqueio, disponível nos pontos definidos pela organização do espaço. A equipe local orienta o acesso.'],
  ['E se eu precisar acessar o celular durante a experiência?','Procure a área de desbloqueio ou a equipe responsável. A organização deve comunicar os pontos de acesso e orientar situações que demandem o uso do aparelho.'],
  ['A SAFE-K bloqueia sinal ou notificações?','O funcionamento apresentado é a restrição de acesso físico ao aparelho pela bolsa trancada. Não se trata de uma promessa de bloqueio de sinal, chamadas ou conectividade.'],
- ['Em quais lugares posso aplicar?','Escolas, universidades, empresas, eventos privados e festas estão entre as aplicações apresentadas pela SAFE-K. Cada local define sua rotina de uso.'],
+ ['Em quais lugares posso aplicar?','Escolas, empresas, eventos privados e festas estão entre as aplicações apresentadas pela SAFE-K. Cada local define sua rotina de uso.'],
  ['Como funciona a implementação?','Conte à equipe qual é o espaço, o número estimado de participantes e a rotina desejada. Esses detalhes ajudam a planejar a distribuição das bolsas e os pontos de desbloqueio.'],
  ['Posso conversar sobre uma aplicação diferente?','Sim. Apresente seu cenário à equipe SAFE-K para avaliar como o sistema pode se encaixar na experiência que você deseja criar.']
 ];

@@ -12,7 +12,7 @@ http.createServer((req, res) => {
   if (!file.startsWith(root + path.sep)) { res.writeHead(403); res.end(); return; }
   fs.readFile(file, (error, data) => {
     if (error) { res.writeHead(404); res.end('Não encontrado'); return; }
-    res.writeHead(200, { 'Content-Type': mime[path.extname(file)] || 'application/octet-stream', 'Cache-Control':'no-store' });
+    res.writeHead(200, { 'Content-Type': ({'.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8'})[path.extname(file)] || mime[path.extname(file)] || 'application/octet-stream', 'Cache-Control':'no-store' });
     res.end(data);
   });
 }).listen(3014, '127.0.0.1', () => console.log('SAFEK: http://localhost:3014'));
