@@ -1,0 +1,119 @@
+{
+  "productionBuildDirectory": "C:\\Users\\gui\\AppData\\Local\\Temp\\safek-production-u8gwK7",
+  "productionPages": 16,
+  "productionIndexable": 15,
+  "unpublishedArticlesExcluded": true,
+  "analytics": {
+    "disabledEvenWithConsent": true,
+    "consentGate": true,
+    "noFormPayload": true,
+    "queryAndFragmentRemoved": true,
+    "noDuplicatePageview": true,
+    "withdrawalStopsNewEvents": true,
+    "vendorRequestsIntercepted": true,
+    "realAnalyticsDelivery": "Not tested; credentials and privacy approval pending"
+  },
+  "visual": [
+    {
+      "slug": "index",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "headerOverlap": false,
+      "lcp": 392,
+      "cls": 0.017635470085470083
+    },
+    {
+      "slug": "index",
+      "width": 1050,
+      "overflow": false,
+      "h1": 1,
+      "headerOverlap": false,
+      "lcp": 124,
+      "cls": 0.00004759542705971277
+    },
+    {
+      "slug": "index",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "headerOverlap": false,
+      "lcp": 132,
+      "cls": 0.000029058235074266976
+    },
+    {
+      "slug": "insights",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "headerOverlap": false,
+      "lcp": 64,
+      "cls": 0
+    },
+    {
+      "slug": "insights",
+      "width": 1050,
+      "overflow": false,
+      "h1": 1,
+      "headerOverlap": false,
+      "lcp": 72,
+      "cls": 0.000030902919501133786
+    },
+    {
+      "slug": "insights",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "headerOverlap": false,
+      "lcp": 64,
+      "cls": 0.00001761424374678498
+    },
+    {
+      "slug": "insights/lei-15100-2025-celulares-escolas",
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "headerOverlap": false,
+      "lcp": 104,
+      "cls": 0
+    },
+    {
+      "slug": "insights/lei-15100-2025-celulares-escolas",
+      "width": 1050,
+      "overflow": false,
+      "h1": 1,
+      "headerOverlap": false,
+      "lcp": 124,
+      "cls": 0
+    },
+    {
+      "slug": "insights/lei-15100-2025-celulares-escolas",
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "headerOverlap": false,
+      "lcp": 80,
+      "cls": 0.00001761424374678498
+    }
+  ],
+  "performance": [
+    {
+      "width": 390,
+      "lcpMs": 392,
+      "cls": 0.017635470085470083,
+      "conditions": "Local Edge, sem limitação de CPU/rede; observação curta; não representa Core Web Vitals de campo."
+    },
+    {
+      "width": 1050,
+      "lcpMs": 124,
+      "cls": 0.00004759542705971277,
+      "conditions": "Local Edge, sem limitação de CPU/rede; observação curta; não representa Core Web Vitals de campo."
+    },
+    {
+      "width": 1440,
+      "lcpMs": 132,
+      "cls": 0.000029058235074266976,
+      "conditions": "Local Edge, sem limitação de CPU/rede; observação curta; não representa Core Web Vitals de campo."
+    }
+  ]
+}

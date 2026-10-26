@@ -1,0 +1,436 @@
+{
+  "checkedAt": "2026-10-26T19:25:02.524Z",
+  "source": "https://safek.com.br",
+  "robots": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://safek.com.br/wp-sitemap.xml\n",
+  "sitemapIndex": "https://safek.com.br/wp-sitemap.xml",
+  "sitemaps": [
+    "https://safek.com.br/wp-sitemap-posts-post-1.xml",
+    "https://safek.com.br/wp-sitemap-posts-page-1.xml",
+    "https://safek.com.br/wp-sitemap-posts-wpr_templates-1.xml",
+    "https://safek.com.br/wp-sitemap-posts-metform-form-1.xml",
+    "https://safek.com.br/wp-sitemap-taxonomies-category-1.xml",
+    "https://safek.com.br/wp-sitemap-taxonomies-post_tag-1.xml",
+    "https://safek.com.br/wp-sitemap-users-1.xml"
+  ],
+  "excludedSitemaps": [
+    "https://safek.com.br/wp-sitemap-posts-wpr_templates-1.xml",
+    "https://safek.com.br/wp-sitemap-posts-metform-form-1.xml",
+    "https://safek.com.br/wp-sitemap-taxonomies-category-1.xml",
+    "https://safek.com.br/wp-sitemap-taxonomies-post_tag-1.xml",
+    "https://safek.com.br/wp-sitemap-users-1.xml"
+  ],
+  "records": [
+    {
+      "url": "https://safek.com.br/mastering-growth-with-proven-business-tips/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/mastering-growth-with-proven-business-tips/",
+      "title": "Mastering Growth with Proven Business Tips – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/mastering-growth-with-proven-business-tips/",
+      "robots": "max-image-preview:large",
+      "h1": [
+        "Mastering Growth with Proven Business Tips"
+      ],
+      "excerpt": "Jules Baumbachmaio 8, 2025 at 8:57 pmQuisquam tenetur ut dolorem optio. Sit enim aliquam qui. Vero consequatur suscipit pariatur. Ipsa non voluptatum hic Doloribus molestiae atque facilis. nobis recusandae tenetur porro dolorum pariatur distinctio. Quo minus ullam qui. Dolorum quidem autem placeat qui voluptas optio quia. aperiam et vitae provident eum consequatur Voluptas molestiae qui sed aut. Quam modi ducimus amet rerum qui. Perspiciatis ut et alias. delectus nihil eos est porro. Laboriosam facilis explicabo magni ut. Blanditiis nobis enim et eveniet placeat ad ut. Responder"
+    },
+    {
+      "url": "https://safek.com.br/top-tools-every-startup-should-know/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/top-tools-every-startup-should-know/",
+      "title": "Top Tools Every Startup Should Know – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/top-tools-every-startup-should-know/",
+      "robots": "max-image-preview:large",
+      "h1": [
+        "Top Tools Every Startup Should Know"
+      ],
+      "excerpt": "Joaquin Champlinmaio 16, 2025 at 1:36 pmOmnis sit tenetur amet. Nemo qui deserunt occaecati Dolores voluptatem officiis impedit debitis enim. Nemo et ab Est asperiores eligendi voluptates debitis eligendi. Ducimus laboriosam et saepe porro corrupti. molestiae totam rerum sed ea distinctio minima. Quasi nostrum necessitatibus expedita. Similique qui officiis et et repellat. Consequuntur aut qui est voluptas quasi libero quo. Responder"
+    },
+    {
+      "url": "https://safek.com.br/boost-productivity-with-simple-daily-habits/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/boost-productivity-with-simple-daily-habits/",
+      "title": "Boost Productivity with Simple Daily Habits – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/boost-productivity-with-simple-daily-habits/",
+      "robots": "max-image-preview:large",
+      "h1": [
+        "Boost Productivity with Simple Daily Habits"
+      ],
+      "excerpt": "Marianna Pfannerstill Sr.maio 16, 2025 at 8:35 amId esse dolorem voluptates dolore. asperiores cupiditate minima sed. itaque non dignissimos aliquam. architecto sunt distinctio ut. sunt quas commodi et Sapiente illo cupiditate officia excepturi tempore. Esse quaerat sit vitae mollitia nesciunt. sint neque eaque rerum. Sequi quidem quo tempora. Aut esse dolorum voluptas in. Vel et impedit possimus incidunt saepe Delectus reprehenderit aut Rem velit eligendi sed omnis itaque veniam. Assumenda debitis et quos reiciendis et. Laudantium pariatur occaecati sit minus impedit sit. Sed a iste suscipit blanditiis illum. Responder"
+    },
+    {
+      "url": "https://safek.com.br/scaling-your-brand-with-smart-strategies/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/scaling-your-brand-with-smart-strategies/",
+      "title": "Scaling Your Brand with Smart Strategies – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/scaling-your-brand-with-smart-strategies/",
+      "robots": "max-image-preview:large",
+      "h1": [
+        "Scaling Your Brand with Smart Strategies"
+      ],
+      "excerpt": "Dianna McGlynnmaio 8, 2025 at 12:55 amAt quisquam nostrum dolores ut molestiae consequuntur. eos quis Ea odit ipsam. Et ratione voluptas Sunt nulla natus non sunt. Ad et et est in adipisci ipsam. vel corrupti accusamus. culpa officia veritatis. consectetur quam architecto sed. laudantium autem quis aut. Quam cum enim excepturi unde. Possimus maxime voluptatum dignissimos Sed eos aut sed dolores est. dicta exercitationem. Exercitationem harum distinctio laborum corporis adipisci consectetur Commodi sed in asperiores veritatis. Responder"
+    },
+    {
+      "url": "https://safek.com.br/dasdeasd/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/dasdeasd/",
+      "title": "dasdeasd – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/dasdeasd/",
+      "robots": "max-image-preview:large",
+      "h1": [
+        "dasdeasd"
+      ],
+      "excerpt": "StephenVesoutubro 23, 2026 at 5:13 amYour comment is awaiting moderation.Things worth watching https://roma.abarthclubofficial.com/2026/10/13/securing-your-quickwin-casino-account-with-australias-online-security-measures-for-safe-login-and-gameplay/ Responder"
+    },
+    {
+      "url": "https://safek.com.br/restricao/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/restricao/",
+      "title": "Restrição – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/restricao/",
+      "robots": "max-image-preview:large",
+      "h1": [
+        "Restrição"
+      ],
+      "excerpt": "Restriçãomaio 4, 2025"
+    },
+    {
+      "url": "https://safek.com.br/privacy-policy/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/privacy-policy/",
+      "title": "Política de Privacidade — SafeK – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/privacy-policy/",
+      "robots": "max-image-preview:large",
+      "h1": [
+        "Quem é o controlador dos dados"
+      ],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/",
+      "title": "SAFE-K – Foco e Segurança",
+      "description": "",
+      "canonical": "https://safek.com.br/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/blog-landing-page-business-v3/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/blog-landing-page-business-v3/",
+      "title": "Blog – SAFE-K",
+      "description": "",
+      "canonical": "",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": "UncategorizedRestrição...Redes e instituições de ensino, públicas e privadas, devem definir as estratégias de implementação da lei até o início do ano letivo. Objetivo é mitigar os impactos negativos...Read More"
+    },
+    {
+      "url": "https://safek.com.br/sobre-nos/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/sobre-nos/",
+      "title": "Sobre Nós – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/sobre-nos/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/escolas/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/escolas/",
+      "title": "Escolas – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/escolas/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/onde-usar/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/onde-usar/",
+      "title": "Onde Usar – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/onde-usar/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/eventos/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/eventos/",
+      "title": "Eventos – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/eventos/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/festas/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/festas/",
+      "title": "Festas – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/festas/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/tribunais/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/tribunais/",
+      "title": "Tribunais – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/tribunais/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/universidades/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/universidades/",
+      "title": "Universidades – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/universidades/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/acampamentos/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/acampamentos/",
+      "title": "Acampamentos – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/acampamentos/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/empresas/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/empresas/",
+      "title": "Empresas – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/empresas/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/hospitais/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/hospitais/",
+      "title": "Hospitais – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/hospitais/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/restricao-ao-uso-do-celular-nas-escolas-ja-esta-valendo/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/restricao-ao-uso-do-celular-nas-escolas-ja-esta-valendo/",
+      "title": "Restrição ao uso do celular nas escolas já está valendo – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/restricao-ao-uso-do-celular-nas-escolas-ja-esta-valendo/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/proibicao-de-celulares-nas-escolas-levanta-debate-sobre-educacao/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/proibicao-de-celulares-nas-escolas-levanta-debate-sobre-educacao/",
+      "title": "Proibição de celulares nas escolas levanta debate sobre educação – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/proibicao-de-celulares-nas-escolas-levanta-debate-sobre-educacao/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/convidando-seus-convidados-para-uma-festa-sem-convidar-seus-celulares/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/convidando-seus-convidados-para-uma-festa-sem-convidar-seus-celulares/",
+      "title": "Convidando Seus Convidados Para Uma Festa Sem Convidar Seus Celulares – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/convidando-seus-convidados-para-uma-festa-sem-convidar-seus-celulares/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    },
+    {
+      "url": "https://safek.com.br/dentro-do-juke-joint-perfeito-e-misterioso-de-dave-chappelle-no-all-star-weekend/",
+      "status": 200,
+      "finalUrl": "https://safek.com.br/dentro-do-juke-joint-perfeito-e-misterioso-de-dave-chappelle-no-all-star-weekend/",
+      "title": "Dentro do “Juke Joint” perfeito e misterioso de Dave Chappelle no All-Star Weekend – SAFE-K",
+      "description": "",
+      "canonical": "https://safek.com.br/dentro-do-juke-joint-perfeito-e-misterioso-de-dave-chappelle-no-all-star-weekend/",
+      "robots": "max-image-preview:large",
+      "h1": [],
+      "excerpt": ""
+    }
+  ],
+  "mapping": [
+    {
+      "oldUrl": "https://safek.com.br/mastering-growth-with-proven-business-tips/",
+      "target": null,
+      "status": "pending-content-review",
+      "reason": "Sem equivalente confirmado. Avaliar conteúdo, tráfego e backlinks antes de preservar, redirecionar ou retirar."
+    },
+    {
+      "oldUrl": "https://safek.com.br/top-tools-every-startup-should-know/",
+      "target": null,
+      "status": "pending-content-review",
+      "reason": "Sem equivalente confirmado. Avaliar conteúdo, tráfego e backlinks antes de preservar, redirecionar ou retirar."
+    },
+    {
+      "oldUrl": "https://safek.com.br/boost-productivity-with-simple-daily-habits/",
+      "target": null,
+      "status": "pending-content-review",
+      "reason": "Sem equivalente confirmado. Avaliar conteúdo, tráfego e backlinks antes de preservar, redirecionar ou retirar."
+    },
+    {
+      "oldUrl": "https://safek.com.br/scaling-your-brand-with-smart-strategies/",
+      "target": null,
+      "status": "pending-content-review",
+      "reason": "Sem equivalente confirmado. Avaliar conteúdo, tráfego e backlinks antes de preservar, redirecionar ou retirar."
+    },
+    {
+      "oldUrl": "https://safek.com.br/dasdeasd/",
+      "target": null,
+      "status": "pending-content-review",
+      "reason": "Sem equivalente confirmado. Avaliar conteúdo, tráfego e backlinks antes de preservar, redirecionar ou retirar."
+    },
+    {
+      "oldUrl": "https://safek.com.br/restricao/",
+      "target": null,
+      "status": "pending-content-review",
+      "reason": "Sem equivalente confirmado. Avaliar conteúdo, tráfego e backlinks antes de preservar, redirecionar ou retirar."
+    },
+    {
+      "oldUrl": "https://safek.com.br/privacy-policy/",
+      "target": "/privacidade.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/",
+      "target": "/",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/blog-landing-page-business-v3/",
+      "target": null,
+      "status": "pending-content-review",
+      "reason": "Sem equivalente confirmado. Avaliar conteúdo, tráfego e backlinks antes de preservar, redirecionar ou retirar."
+    },
+    {
+      "oldUrl": "https://safek.com.br/sobre-nos/",
+      "target": "/sobre.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/escolas/",
+      "target": "/escolas.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/onde-usar/",
+      "target": "/onde-usar.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/eventos/",
+      "target": "/eventos.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/festas/",
+      "target": "/eventos.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/tribunais/",
+      "target": "/onde-usar.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/universidades/",
+      "target": "/onde-usar.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/acampamentos/",
+      "target": "/onde-usar.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/empresas/",
+      "target": "/empresas.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/hospitais/",
+      "target": "/onde-usar.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/restricao-ao-uso-do-celular-nas-escolas-ja-esta-valendo/",
+      "target": "/celulares-nas-escolas.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/proibicao-de-celulares-nas-escolas-levanta-debate-sobre-educacao/",
+      "target": "/educacao-e-tecnologia.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/convidando-seus-convidados-para-uma-festa-sem-convidar-seus-celulares/",
+      "target": "/festas-sem-celulares.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    },
+    {
+      "oldUrl": "https://safek.com.br/dentro-do-juke-joint-perfeito-e-misterioso-de-dave-chappelle-no-all-star-weekend/",
+      "target": "/presenca-nos-shows.html",
+      "status": "proposed-review",
+      "reason": "Equivalente ou consolidação na arquitetura atual; revisar antes da migração."
+    }
+  ],
+  "limitations": [
+    "Sem acesso ao Search Console, logs ou backlinks.",
+    "GET com redirecionamentos automáticos registra URL final; cadeia intermediária não inspecionada.",
+    "Mapeamento proposto não autoriza alterações no site antigo ou no DNS."
+  ]
+}

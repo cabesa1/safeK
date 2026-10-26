@@ -1,0 +1,31 @@
+{
+  "slug": "politica-uso-celulares-escola",
+  "status": "draft",
+  "approvedForPublication": false,
+  "author": {"type": "Organization", "name": "Equipe SAFE-K"},
+  "publishedAt": null,
+  "modifiedAt": null,
+  "sourcesVerified": true,
+  "sourcesCheckedAt": "2026-10-26",
+  "category": "Planejamento institucional",
+  "title": "Como implementar uma política de uso de celulares na escola",
+  "seoTitle": "Política de uso de celulares na escola: como planejar | SAFE-K",
+  "description": "Um roteiro para gestores planejarem regras, comunicação, guarda, acesso e acompanhamento do uso de celulares na rotina escolar.",
+  "summary": "Uma política utilizável combina regras compreensíveis, participação da comunidade, responsabilidades definidas e acesso às exceções. O método de guarda deve acompanhar esse planejamento.",
+  "image": "safek-viva-momento-tratada.webp",
+  "imageAlt": "Pessoa lendo um livro com uma bolsa SAFE-K sobre a mesa.",
+  "disclaimer": "As etapas práticas abaixo são recomendações de planejamento. Elas não substituem a legislação, as normas da rede ou a avaliação jurídica e pedagógica da instituição.",
+  "sections": [
+    {"id": "diagnostico", "heading": "1. Comece pela rotina da instituição", "paragraphs": ["Antes de escolher um método de guarda, mapeie os momentos em que os aparelhos são usados, as dificuldades relatadas pelos professores e os canais de comunicação com as famílias. Observe aulas, recreios, entradas e saídas.", "Registre também usos pedagógicos planejados e necessidades de acesso. A Lei nº 15.100/2025 prevê exceções, e o Decreto nº 12.385/2025 trata da organização institucional. Um diagnóstico útil considera essas condições desde o início."], "bullets": ["Quais etapas e turnos serão envolvidos?", "Onde surgem dúvidas ou interrupções?", "Quem orientará estudantes e responsáveis?", "Como a escola recebe pedidos de acesso e necessidades individuais?"], "sourceIds": ["lei", "decreto"]},
+    {"id": "regras", "heading": "2. Transforme a orientação em regras compreensíveis", "paragraphs": ["Explique quais períodos têm restrição, como funciona a guarda e o que o estudante deve fazer quando precisar acessar o aparelho. Diferencie a rotina geral dos usos autorizados e das situações excepcionais.", "O decreto prevê que regimentos e propostas pedagógicas contemplem orientações, critérios de uso pedagógico, guarda e consequências do descumprimento. A redação local deve considerar as orientações do sistema de ensino e a participação da comunidade escolar. Evite criar procedimentos informais que contradigam esses documentos."], "sourceIds": ["decreto"]},
+    {"id": "comunicacao", "heading": "3. Converse com famílias e estudantes antes da implantação", "paragraphs": ["Apresente o propósito da política, o funcionamento diário e os canais para dúvidas. Um comunicado curto pode ser acompanhado de uma conversa por turma ou de uma apresentação para as famílias.", "Uma recomendação prática é demonstrar o percurso completo: chegada, guarda, permanência, eventual acesso e saída. Informe como responsáveis podem entrar em contato com a instituição e como devem comunicar situações que exijam atenção individual.", "A conversa deve esclarecer o procedimento sem expor informações pessoais de estudantes. Questões individuais podem ser tratadas pelos canais reservados definidos pela escola."], "sourceIds": []},
+    {"id": "equipe", "heading": "4. Prepare quem vai orientar a operação", "paragraphs": ["A equipe precisa conhecer o mesmo procedimento e saber a quem recorrer quando houver dúvida. Combine responsabilidades entre gestão, professores, atendimento e profissionais que acompanham os fluxos de entrada e saída.", "Antes do início, faça uma passagem prática pela rotina prevista. Essa é uma recomendação operacional para identificar filas, pontos de dúvida e dificuldades de acesso; não é uma promessa de capacidade nem um modelo único de implantação."], "sourceIds": []},
+    {"id": "acesso", "heading": "5. Defina o acesso em exceções e emergências", "paragraphs": ["A política deve respeitar as hipóteses previstas na legislação, como necessidades de saúde, acessibilidade, inclusão, direitos fundamentais e situações de perigo, necessidade ou força maior. A equipe deve conhecer o procedimento institucional para esses casos.", "Defina quem atende uma solicitação, onde ocorre o acesso e como estudantes e responsáveis recebem orientação. Uma orientação sobre o uso da bolsa não substitui o plano de emergência da escola. Procedimentos específicos devem ser validados pela instituição e pelos responsáveis competentes."], "sourceIds": ["lei", "decreto"]},
+    {"id": "metodo", "heading": "6. Escolha o método de guarda pelo contexto", "paragraphs": ["Compare as opções considerando acesso permitido, posse do aparelho, distribuição da equipe, espaço e manutenção da rotina. A decisão não deve se apoiar somente na aparência de um equipamento.", "A SAFE-K é uma das ferramentas que podem ser avaliadas: a bolsa guarda o celular com seu dono e é aberta em uma base de desbloqueio. Para analisar a aplicação, informe à equipe o tipo de ambiente, a quantidade estimada de participantes e os períodos de uso.", "O produto não substitui comunicação, formação, critérios pedagógicos ou a definição das responsabilidades da escola."], "sourceIds": []},
+    {"id": "acompanhar", "heading": "7. Revise a operação com critérios definidos", "paragraphs": ["Após a implantação, reúna dúvidas recorrentes e relatos da equipe sobre entrada, acesso e saída. Se a instituição decidir acompanhar indicadores, estabeleça primeiro o que será observado e como os registros serão tratados.", "Acompanhe se as orientações são compreendidas e se os usos permitidos continuam acessíveis. Ajuste o procedimento a partir do contexto real, sem atribuir ganhos de aprendizagem ou de saúde a uma ferramenta sem evidências que sustentem essa conclusão."], "sourceIds": []}
+  ],
+  "sources": [
+    {"id": "lei", "title": "Lei nº 15.100/2025 — Presidência da República", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15100.htm"},
+    {"id": "decreto", "title": "Decreto nº 12.385/2025 — Presidência da República", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12385.htm"}
+  ]
+}

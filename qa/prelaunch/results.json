@@ -1,0 +1,16 @@
+{
+  "optionalFields": true,
+  "phoneValidation": true,
+  "preparedEmail": true,
+  "externalMessagesSent": 0,
+  "indexingDefault": "noindex",
+  "productionOptIn": true,
+  "previewHostRule": "checked in configuration; live edge check pending deployment",
+  "privacyLink": true,
+  "imageBytes": {
+    "before": 1500359,
+    "after": 84698,
+    "reductionPercent": 94.4
+  },
+  "errors": []
+}

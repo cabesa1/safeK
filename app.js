@@ -53,13 +53,20 @@
     const selected=new URLSearchParams(location.search).get('ambiente');
     if([...segment.options].some(o=>o.value===selected))segment.value=selected;
     const draft=document.querySelector('#draft-text');
+    const phone=form.querySelector('[name="phone"]');
+    phone.addEventListener('input',()=>{
+      const value=phone.value.trim(),digits=value.replace(/\D/g,'');
+      phone.setCustomValidity(value&&(!/^[+\d\s().-]+$/.test(value)||digits.length<8||digits.length>15)?'Informe um telefone com DDD, ou deixe este campo em branco.':'');
+    });
     let subject='Solicitação de demonstração SAFE-K';
     const updateDraftLink=()=>{document.querySelector('#draft-email').href=`mailto:safek@globalk.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(draft.value)}`;};
     draft.addEventListener('input',updateDraftLink);
     form.addEventListener('submit',event=>{
       event.preventDefault();if(!form.reportValidity())return;
       const data=new FormData(form);subject='Demonstração SAFE-K — '+String(data.get('institution')).trim();
-      draft.value=`Olá, equipe SAFE-K!\n\nGostaria de solicitar uma demonstração da solução para o meu espaço.\n\nNome: ${String(data.get('name')).trim()}\nE-mail: ${data.get('email')}\nInstituição: ${String(data.get('institution')).trim()}\nAmbiente: ${data.get('segment')}\nParticipantes estimados: ${data.get('participants')||'A definir'}\n\n${String(data.get('message')).trim()}`;
+      const phoneLine=String(data.get('phone')||'').trim();
+      const message=String(data.get('message')||'').trim();
+      draft.value=`Olá, equipe SAFE-K!\n\nGostaria de solicitar uma demonstração da solução para o meu espaço.\n\nNome: ${String(data.get('name')).trim()}\nE-mail: ${data.get('email')}${phoneLine?'\nTelefone / WhatsApp: '+phoneLine:''}\nInstituição: ${String(data.get('institution')).trim()}\nAmbiente: ${data.get('segment')}\nParticipantes estimados: ${data.get('participants')||'A definir'}${message?'\n\n'+message:''}`;
       updateDraftLink();document.querySelector('#message-preview').hidden=false;document.querySelector('#form-status').textContent='O pedido foi preparado no aplicativo de e-mail. Revise e confirme o envio por lá.';document.querySelector('#message-preview').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'center'});document.querySelector('#draft-email').click();
     });
     document.querySelector('#copy-message').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(draft.value);document.querySelector('#form-status').textContent='Mensagem copiada. Cole no seu aplicativo de e-mail e envie para safek@globalk.com.br.';}catch{draft.focus();draft.select();document.querySelector('#form-status').textContent='Selecione e copie a mensagem acima para enviar a safek@globalk.com.br.';}});

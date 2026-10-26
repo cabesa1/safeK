@@ -1,0 +1,29 @@
+{
+  "slug": "lei-15100-2025-celulares-escolas",
+  "status": "draft",
+  "approvedForPublication": false,
+  "author": {"type": "Organization", "name": "Equipe SAFE-K"},
+  "publishedAt": null,
+  "modifiedAt": null,
+  "sourcesVerified": true,
+  "sourcesCheckedAt": "2026-10-26",
+  "category": "Legislação e gestão escolar",
+  "title": "Lei nº 15.100/2025: o que as escolas precisam saber sobre o uso de celulares",
+  "seoTitle": "Lei 15.100/2025 e celulares nas escolas | SAFE-K Insights",
+  "description": "Entenda o alcance da Lei 15.100/2025, as exceções previstas e os pontos que a escola precisa organizar sobre guarda e acesso aos celulares.",
+  "summary": "A lei restringe o uso de aparelhos pessoais por estudantes da educação básica durante aulas, recreios e intervalos, com exceções. A escola precisa organizar sua rotina sem impedir os usos permitidos.",
+  "image": "escolas.webp",
+  "imageAlt": "Estudantes em ambiente escolar, em imagem ilustrativa.",
+  "disclaimer": "Conteúdo informativo, sem caráter de parecer jurídico. Consulte os textos oficiais, as orientações do seu sistema de ensino e a assessoria responsável pela instituição.",
+  "sections": [
+    {"id": "alcance", "heading": "A quem a regra se aplica?", "paragraphs": ["A Lei nº 15.100, de 13 de janeiro de 2025, trata do uso de aparelhos eletrônicos portáteis pessoais por estudantes de estabelecimentos públicos e privados da educação básica. O texto inclui os celulares, mas não se limita a eles.", "A restrição de uso alcança aulas, recreios e intervalos entre aulas em todas as etapas da educação básica. Isso não equivale a afirmar que todo uso de tecnologia na escola está proibido: a própria legislação prevê finalidades e situações em que o acesso é permitido."], "sourceIds": ["lei"]},
+    {"id": "excecoes", "heading": "Quais exceções precisam ser respeitadas?", "paragraphs": ["Em sala de aula, o uso para fins estritamente pedagógicos ou didáticos é permitido conforme a orientação dos profissionais de educação. A lei também excepciona situações de estado de perigo, estado de necessidade ou força maior.", "O texto permite ainda usos voltados à acessibilidade, à inclusão, às condições de saúde dos estudantes e à garantia de direitos fundamentais. O Decreto nº 12.385/2025 detalha aspectos de comprovação de necessidades de tecnologia assistiva e de saúde e admite outras formas de comprovação a critério dos sistemas de ensino.", "Por isso, um procedimento de guarda precisa conviver com um procedimento de acesso. A escola deve orientar a equipe para que a organização cotidiana não impeça as situações permitidas."], "sourceIds": ["lei", "decreto"]},
+    {"id": "rotina", "heading": "O que a instituição precisa organizar?", "paragraphs": ["O decreto orienta os estabelecimentos a observar as normas complementares do Conselho Nacional de Educação e de seus sistemas de ensino. Também prevê que regimentos internos e propostas pedagógicas tratem da orientação aos estudantes e às famílias, da formação da equipe, dos critérios de uso pedagógico, da forma de guarda e das consequências do descumprimento.", "A divulgação das alterações e a participação da comunidade escolar fazem parte desse processo. O planejamento não se resume a escolher onde o aparelho ficará: é preciso explicar a rotina e distribuir responsabilidades."], "bullets": ["Comunicar quando e onde o uso fica restrito.", "Definir a guarda e os pontos de acesso ao aparelho.", "Orientar quem acompanha exceções e necessidades individuais.", "Preparar os fluxos de entrada, intervalos e saída.", "Articular as regras com a proposta pedagógica e as orientações da rede."], "sourceIds": ["decreto"]},
+    {"id": "guarda", "heading": "A lei exige comprar uma bolsa bloqueadora?", "paragraphs": ["A lei e o decreto citados não estabelecem a compra da SAFE-K ou de uma marca específica como requisito. O decreto prevê que a forma de guarda seja definida pela instituição em seus instrumentos internos, observadas as exceções legais e as normas aplicáveis.", "Uma bolsa com trava pode ser uma ferramenta dentro desse planejamento. No funcionamento apresentado pela SAFE-K, o celular permanece com seu dono, e a bolsa é aberta em uma base de desbloqueio. A escolha do método deve considerar a rotina da escola, o acesso permitido e a operação da equipe.", "Neste contexto, restringir o acesso físico ao aparelho é diferente de bloquear sinal de rede. A SAFE-K não apresenta a bolsa como uma promessa de interromper chamadas ou conectividade."], "sourceIds": ["lei", "decreto"]},
+    {"id": "alem-guarda", "heading": "O trabalho vai além da guarda do aparelho", "paragraphs": ["A legislação também aborda formação, conscientização, escuta e acolhimento relacionados ao uso de dispositivos. Uma ferramenta física não substitui essas ações nem, isoladamente, comprova o cumprimento de todas as obrigações da instituição.", "Antes de implantar uma rotina, confira as orientações atualizadas da sua rede e combine como estudantes, famílias e profissionais poderão esclarecer dúvidas. Depois, acompanhe situações de acesso, dificuldades operacionais e necessidades de revisão."], "sourceIds": ["lei", "decreto"]}
+  ],
+  "sources": [
+    {"id": "lei", "title": "Lei nº 15.100/2025 — Presidência da República", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15100.htm"},
+    {"id": "decreto", "title": "Decreto nº 12.385/2025 — Presidência da República", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12385.htm"}
+  ]
+}

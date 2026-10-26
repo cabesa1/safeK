@@ -1,6 +1,6 @@
 {
-  "pages": 15,
-  "layouts": 60,
+  "pages": 19,
+  "layouts": 76,
   "failures": [],
   "errors": [],
   "checks": [
@@ -165,6 +165,26 @@
       "pass": true
     },
     {
+      "page": "insights",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "insights",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "insights",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "insights",
+      "width": 1440,
+      "pass": true
+    },
+    {
       "page": "escolas",
       "width": 320,
       "pass": true
@@ -301,9 +321,69 @@
     },
     {
       "page": "presenca-nos-shows",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "insights/lei-15100-2025-celulares-escolas",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "insights/lei-15100-2025-celulares-escolas",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "insights/lei-15100-2025-celulares-escolas",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "insights/lei-15100-2025-celulares-escolas",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "insights/politica-uso-celulares-escola",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "insights/politica-uso-celulares-escola",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "insights/politica-uso-celulares-escola",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "insights/politica-uso-celulares-escola",
+      "width": 1440,
+      "pass": true
+    },
+    {
+      "page": "insights/reduzir-distracoes-digitais-sala-aula",
+      "width": 320,
+      "pass": true
+    },
+    {
+      "page": "insights/reduzir-distracoes-digitais-sala-aula",
+      "width": 390,
+      "pass": true
+    },
+    {
+      "page": "insights/reduzir-distracoes-digitais-sala-aula",
+      "width": 768,
+      "pass": true
+    },
+    {
+      "page": "insights/reduzir-distracoes-digitais-sala-aula",
       "width": 1440,
       "pass": true
     }
   ],
-  "interactions": "Menu desktop e móvel, oito aplicações, navegação até demonstração, FAQ, seleção de contexto, validação, mensagem editável, link de e-mail, redirecionamento e arquivo local. Nenhuma mensagem enviada."
+  "interactions": "Menu desktop e móvel, três aplicações, navegação até demonstração, FAQ, seleção de contexto, validação, mensagem editável, link de e-mail, redirecionamento e arquivo local. Nenhuma mensagem enviada."
 }

@@ -1,0 +1,85 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const {spawnSync}=require('node:child_process');
+const {chromium}=require(process.env.SAFEK_PLAYWRIGHT||'playwright');
+const root=path.resolve(__dirname,'..');
+const base='http://127.0.0.1:3014';
+
+(async()=>{
+ const production=spawnSync(process.execPath,['-e',"console.log(require('./src/seo.cjs').robots)"],{cwd:root,env:{...process.env,SAFEK_SITE_ENV:'production',SEO_ALLOW_INDEXING:'true'},encoding:'utf8'});
+ assert.equal(production.status,0);
+ assert.equal(production.stdout.trim(),'index,follow,max-image-preview:large');
+ const staging=spawnSync(process.execPath,['-e',"console.log(require('./src/seo.cjs').robots)"],{cwd:root,env:{...process.env,SAFEK_SITE_ENV:'staging',SEO_ALLOW_INDEXING:''},encoding:'utf8'});
+ assert.equal(staging.status,0);
+ assert.equal(staging.stdout.trim(),'noindex,follow,max-image-preview:large');
+ const config=JSON.parse(fs.readFileSync(path.join(root,'vercel.json'),'utf8'));
+ const rule=config.headers.find(r=>r.headers.some(h=>h.key==='X-Robots-Tag'));
+ const host=new RegExp('^'+rule.has.find(h=>h.type==='host').value+'$');
+ assert(host.test('safek-one.vercel.app')&&host.test('safek-abc123-cabesa1.vercel.app'));
+ assert(!host.test('safek.com.br')&&!host.test('www.safek.com.br'));
+ const browser=await chromium.launch({channel:'msedge',headless:true});
+ const errors=[],requests=[];
+ try{
+  const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});
+  await page.addInitScript(()=>sessionStorage.setItem('safek_privacy_notice','dismissed'));
+  page.on('pageerror',e=>errors.push(e.message));
+  page.on('request',r=>{if(r.method()==='POST')requests.push(r.url());});
+  const response=await page.goto(base+'/contato.html?ambiente=Escolas');
+  assert.equal(response.status(),200);
+  assert.equal(response.headers()['x-robots-tag'],'noindex, follow');
+  assert((await page.locator('meta[name="robots"]').getAttribute('content')).startsWith('noindex,'));
+  assert.equal(await page.locator('#segment').inputValue(),'Escolas');
+  assert.equal(await page.locator('[name="phone"]').evaluate(i=>i.required),false);
+  assert.equal(await page.locator('[name="message"]').evaluate(i=>i.required),false);
+  assert.equal(await page.locator('#contact-form').evaluate(f=>f.checkValidity()),false);
+  await page.locator('[name="name"]').fill('Pessoa de teste');
+  await page.locator('[name="institution"]').fill('Instituição de teste');
+  await page.locator('[name="email"]').fill('email-invalido');
+  assert.equal(await page.locator('#contact-form').evaluate(f=>f.checkValidity()),false);
+  await page.locator('[name="email"]').fill('teste+local@example.org');
+  assert.equal(await page.locator('#contact-form').evaluate(f=>f.checkValidity()),true);
+  await page.locator('[name="phone"]').fill('abc');
+  assert.equal(await page.locator('[name="phone"]').evaluate(i=>i.checkValidity()),false);
+  await page.locator('[name="phone"]').fill('123');
+  assert.equal(await page.locator('[name="phone"]').evaluate(i=>i.checkValidity()),false);
+  await page.locator('[name="phone"]').fill('');
+  assert.equal(await page.locator('#contact-form').evaluate(f=>f.checkValidity()),true);
+  // Never launch the external mail client or transmit a test lead.
+  await page.locator('#draft-email').evaluate(a=>a.addEventListener('click',e=>e.preventDefault()));
+  await page.getByRole('button',{name:'Abrir pedido no e-mail',exact:true}).click();
+  assert(await page.locator('#message-preview').isVisible());
+  let draft=await page.locator('#draft-text').inputValue();
+  assert(!draft.includes('Telefone / WhatsApp:'));
+  assert(!draft.includes('null')&&!draft.includes('undefined'));
+  assert((await page.locator('#form-status').textContent()).includes('confirme o envio'));
+  await page.locator('[name="phone"]').fill('+55 (15) 99999-9999');
+  await page.locator('[name="message"]').fill('Gostaria de conversar sobre o uso em aulas.');
+  await page.getByRole('button',{name:'Abrir pedido no e-mail',exact:true}).click();
+  const email=new URL(await page.locator('#draft-email').getAttribute('href'));
+  assert.equal(email.protocol,'mailto:');
+  assert.equal(email.pathname,'safek@globalk.com.br');
+  draft=email.searchParams.get('body');
+  assert(draft.includes('Telefone / WhatsApp: +55 (15) 99999-9999'));
+  assert(draft.includes('Gostaria de conversar sobre o uso em aulas.'));
+  await page.locator('#draft-text').fill('Mensagem revisada antes do envio.');
+  assert(new URL(await page.locator('#draft-email').getAttribute('href')).searchParams.get('body').includes('Mensagem revisada antes do envio.'));
+  await page.getByRole('link',{name:'Veja como usamos seus dados.',exact:true}).click();
+  await page.waitForURL('**/privacidade.html');
+  assert((await page.locator('.privacy-content').textContent()).includes('telefone'));
+  for(const route of ['sobre','como-funciona']){
+   await page.goto(base+'/'+route+'.html');
+   const photo=page.locator('.simple-product');
+   assert((await photo.getAttribute('src')).endsWith('.webp'));
+   await photo.evaluate(i=>i.decode());
+  }
+  assert.deepEqual(requests,[]);
+  assert.deepEqual(errors,[]);
+  const oldSize=fs.statSync(path.join(root,'assets/produto-real-2026-09.png')).size;
+  const newSize=fs.statSync(path.join(root,'assets/produto-real-2026-09.webp')).size;
+  const result={optionalFields:true,phoneValidation:true,preparedEmail:true,externalMessagesSent:0,indexingDefault:'noindex',productionOptIn:true,previewHostRule:'checked in configuration; live edge check pending deployment',privacyLink:true,imageBytes:{before:oldSize,after:newSize,reductionPercent:Number(((1-newSize/oldSize)*100).toFixed(1))},errors};
+  const directory=path.join(root,'qa','prelaunch');fs.mkdirSync(directory,{recursive:true});
+  fs.writeFileSync(path.join(directory,'results.json'),JSON.stringify(result,null,2));
+  console.log(JSON.stringify(result,null,2));
+ }finally{await browser.close();}
+})().catch(error=>{console.error(error);process.exitCode=1;});

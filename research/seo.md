@@ -1,41 +1,18 @@
-# SEO da SAFE-K
+# SEO SAFE-K — referência atual
 
-Domínio definitivo confirmado: https://safek.com.br.
+O relatório completo e vigente está em [seo-geo-report.md](seo-geo-report.md), incluindo configuração, páginas, fontes, testes, migração e pendências.
 
-## Implementado
+- Arquitetura estática Node/CommonJS, sem biblioteca SEO ou framework.
+- Prévia padrão: origem https://safek-one.vercel.app, noindex, sitemap vazio e sem submissão.
+- Produção futura: origem https://safek.com.br, exige SAFEK_SITE_ENV=production E SEO_ALLOW_INDEXING=true após autorização.
+- A variável SEO_SITE_URL define somente a origem de staging; não pode usar o domínio oficial.
+- Artigos draft são locais, excluídos de produção e Vercel. Menu Insights só aparece em publicação quando houver artigos aprovados.
+- Metadados e schemas em src/seo.cjs; ambientes em src/site-config.cjs; artigos em content/insights.
+- Sitemap automático inclui somente canonical indexável; não inventa datas de modificação.
+- Organização, site, página, breadcrumbs e produto verificados. BlogPosting apenas quando há artigo publicado com autor e datas válidos.
+- Social cards em assets/social, 1200 × 630; fontes WOFF2 locais; conteúdo renderizado no HTML.
+- Não houve publicação deste lote. A validação de noindex no localhost não confirma que o deployment público já recebeu as mudanças.
 
-- Títulos e descrições específicos para as 15 páginas.
-- URL canônica por página; início em `/`, demais páginas em `/*.html`.
-- Sitemap e robots gerados junto das páginas e incluídos no pacote publicado.
-- Open Graph e Twitter Cards com imagem local e texto da página.
-- Dados estruturados de Organization, WebSite, WebPage, BreadcrumbList, Product e Article conforme o conteúdo visível. Sem avaliações, preços, autores ou datas inventadas.
-- Redirecionamentos permanentes na Vercel dos caminhos antigos e páginas retiradas para destinos ativos.
-- Conteúdo principal disponível no HTML sem depender do JavaScript.
+Comandos: npm.cmd run build; node tools/build-static.cjs; node tools/check-seo.cjs. Testes de navegador: tools/review-v2.cjs, tools/check-prelaunch.cjs e tools/check-insights.cjs, com Playwright disponível para desenvolvimento. O projeto não depende dele em runtime.
 
-Configuração central: `src/seo.cjs`. `SEO_SITE_URL` pode substituir o domínio durante um build; o padrão é o domínio definitivo.
-
-Validação: `node build.cjs`, `node tools/build-static.cjs`, `node tools/check-seo.cjs`.
-
-## Intenção por página
-
-Início: bolsa para celular e ambientes sem uso de celular.
-Como funciona: funcionamento, trava, posse e desbloqueio.
-Escolas: bolsa para celular nas escolas.
-Empresas: guarda do celular em reuniões e treinamentos.
-Eventos: eventos privados e festas sem celular.
-Contato: demonstração e localização em Sorocaba.
-Acervo: buscas informativas sobre atenção, educação e experiências sem telas.
-
-## Publicação e indexação
-
-Antes da troca do domínio, registrar no Search Console as URLs atuais e o desempenho do site antigo, se houver acesso. Conferir caminhos importantes além dos preservados no projeto e criar redirecionamentos adicionais se necessário.
-
-Ao publicar: vincular safek.com.br à hospedagem, escolher esse domínio como principal e redirecionar a variante www. Verificar HTTPS, respostas HTTP, redirecionamentos, imagens de compartilhamento e sitemap no domínio público. O build local não comprova essas etapas.
-
-No Search Console: verificar a propriedade do domínio pelo DNS, enviar https://safek.com.br/sitemap.xml e inspecionar as páginas principais. Monitorar indexação, erros e Core Web Vitals após a publicação.
-
-Os artigos são sínteses editoriais do acervo, não depoimentos nem casos comerciais. Conferir os links para as publicações completas ao migrar o acervo antigo para evitar links que retornem à própria síntese.
-
-Não há garantia de posição ou prazo de indexação. As alterações locais precisam chegar ao domínio definitivo para produzir efeito no site público.
-
-Referências: https://developers.google.com/search/docs/fundamentals/get-started-developers ; https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls ; https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap ; https://developers.google.com/search/docs/appearance/structured-data/organization .
+Não há garantia de ranking, indexação ou citações por IA. Pesquisa de demanda, Search Console, CRM e autorização de domínio ainda são dependências externas.

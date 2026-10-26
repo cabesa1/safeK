@@ -1,0 +1,30 @@
+{
+  "slug": "reduzir-distracoes-digitais-sala-aula",
+  "status": "draft",
+  "approvedForPublication": false,
+  "author": {"type": "Organization", "name": "Equipe SAFE-K"},
+  "publishedAt": null,
+  "modifiedAt": null,
+  "sourcesVerified": true,
+  "sourcesCheckedAt": "2026-10-26",
+  "category": "Atenção e convivência",
+  "title": "Como reduzir distrações digitais em sala de aula",
+  "seoTitle": "Como reduzir distrações digitais em sala de aula | SAFE-K",
+  "description": "Conheça práticas para organizar o uso de celulares, comunicar combinados e planejar a guarda e o acesso aos aparelhos na escola.",
+  "summary": "Comece por uma rotina clara: explique quando o aparelho pode ser usado, como fica guardado e como acessar os usos permitidos. Envolva estudantes, famílias e equipe no planejamento.",
+  "image": "imprensa-escolas.webp",
+  "imageAlt": "Ambiente de estudo em imagem ilustrativa do acervo.",
+  "disclaimer": "Este texto reúne recomendações práticas de organização escolar. Não apresenta uma intervenção clínica nem promete resultados de aprendizagem ou de saúde.",
+  "sections": [
+    {"id": "interrupcoes", "heading": "Observe os momentos em que a aula é interrompida", "paragraphs": ["Uma proposta prática é começar pelo que a equipe consegue observar: consultas frequentes ao aparelho, dúvidas sobre quando ele pode ser utilizado e orientações diferentes entre atividades. Descreva as situações antes de escolher uma resposta.", "Ouça professores e estudantes para entender o contexto. A mesma ferramenta pode participar de uma atividade pedagógica ou ser utilizada fora do propósito combinado. A rotina precisa distinguir essas situações, respeitando a legislação aplicável."], "sourceIds": ["lei"]},
+    {"id": "combinados", "heading": "Faça combinados que possam ser compreendidos e seguidos", "paragraphs": ["Explique a regra em linguagem direta e diga o que acontece na prática. Em vez de comunicar apenas uma proibição, descreva a guarda, o acesso permitido e quem pode orientar os estudantes.", "Uma sugestão é apresentar exemplos cotidianos: o que fazer na chegada, em uma atividade autorizada pelo professor, durante os intervalos e ao terminar o turno. As exceções não devem ficar escondidas em um comunicado separado que a equipe desconhece."], "sourceIds": []},
+    {"id": "pedagogia", "heading": "Diferencie a pausa no celular do uso pedagógico", "paragraphs": ["A Lei nº 15.100/2025 admite, em sala de aula, o uso para fins estritamente pedagógicos ou didáticos sob orientação dos profissionais de educação. Uma política de guarda não elimina essa possibilidade.", "Como recomendação de planejamento, o professor pode indicar antecipadamente se a atividade envolverá um dispositivo e como ocorrerá o acesso. O procedimento precisa ser compatível com as orientações da instituição e de seu sistema de ensino."], "sourceIds": ["lei", "decreto"]},
+    {"id": "guarda", "heading": "Organize a guarda sem improvisar o acesso", "paragraphs": ["Defina um procedimento que a equipe consiga orientar ao longo do dia. Considere a entrada, os intervalos, os locais de acesso e a saída, incluindo situações em que o aparelho pode ser utilizado.", "Soluções físicas podem fazer parte dessa organização. No modelo apresentado pela SAFE-K, a bolsa permanece com o dono do celular e a trava é liberada em uma base. Esse mecanismo restringe o acesso físico: não deve ser confundido com uma promessa de bloqueio de sinal.", "A escolha de uma ferramenta não substitui as regras da escola nem os procedimentos para necessidades individuais e situações excepcionais."], "sourceIds": []},
+    {"id": "convivencia", "heading": "Dê espaço para a atividade e para a convivência", "paragraphs": ["Ao propor uma pausa nas telas, explique o que se espera daquele momento: ouvir uma apresentação, participar de uma conversa, ler ou realizar uma atividade em grupo. Esse propósito pode tornar o combinado mais concreto.", "As propostas pedagógicas continuam sendo definidas pelos profissionais de educação. O equipamento de guarda é um recurso de organização, e não uma garantia de atenção, participação ou desempenho."], "sourceIds": []},
+    {"id": "avaliacao", "heading": "Revise a rotina sem prometer um resultado automático", "paragraphs": ["Combine momentos para ouvir a equipe e verificar se os estudantes sabem como guardar e acessar o aparelho. Registre dúvidas e dificuldades operacionais de forma proporcional à necessidade da escola.", "Não é preciso atribuir percentuais de melhora a uma nova rotina sem dados. A avaliação começa por perguntas práticas: as orientações são consistentes? Os usos permitidos estão acessíveis? A entrada e a saída funcionam como planejado?", "Se a instituição desejar conhecer a SAFE-K, uma demonstração pode ajudar a entender o mecanismo de guarda e desbloqueio antes de avaliar sua aplicação."], "sourceIds": []}
+  ],
+  "sources": [
+    {"id": "lei", "title": "Lei nº 15.100/2025 — Presidência da República", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15100.htm"},
+    {"id": "decreto", "title": "Decreto nº 12.385/2025 — Presidência da República", "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12385.htm"}
+  ]
+}

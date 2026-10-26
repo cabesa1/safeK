@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://safek.com.br/sitemap.xml
