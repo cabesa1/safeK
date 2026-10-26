@@ -1,8 +1,10 @@
 {
-  "productionBuildDirectory": "C:\\Users\\gui\\AppData\\Local\\Temp\\safek-production-u8gwK7",
-  "productionPages": 16,
-  "productionIndexable": 15,
+  "productionBuildDirectory": "C:\\Users\\gui\\AppData\\Local\\Temp\\safek-production-Jz0Ep0",
+  "productionPages": 19,
+  "productionIndexable": 19,
+  "publishedArticles": 3,
   "unpublishedArticlesExcluded": true,
+  "draftFixtureExcluded": true,
   "analytics": {
     "disabledEvenWithConsent": true,
     "consentGate": true,
@@ -21,7 +23,7 @@
       "h1": 1,
       "headerOverlap": false,
       "lcp": 392,
-      "cls": 0.017635470085470083
+      "cls": 0.017674161621557452
     },
     {
       "slug": "index",
@@ -29,7 +31,7 @@
       "overflow": false,
       "h1": 1,
       "headerOverlap": false,
-      "lcp": 124,
+      "lcp": 132,
       "cls": 0.00004759542705971277
     },
     {
@@ -38,8 +40,8 @@
       "overflow": false,
       "h1": 1,
       "headerOverlap": false,
-      "lcp": 132,
-      "cls": 0.000029058235074266976
+      "lcp": 108,
+      "cls": 0.00002555097415123457
     },
     {
       "slug": "insights",
@@ -47,7 +49,7 @@
       "overflow": false,
       "h1": 1,
       "headerOverlap": false,
-      "lcp": 64,
+      "lcp": 72,
       "cls": 0
     },
     {
@@ -56,7 +58,7 @@
       "overflow": false,
       "h1": 1,
       "headerOverlap": false,
-      "lcp": 72,
+      "lcp": 52,
       "cls": 0.000030902919501133786
     },
     {
@@ -65,7 +67,7 @@
       "overflow": false,
       "h1": 1,
       "headerOverlap": false,
-      "lcp": 64,
+      "lcp": 52,
       "cls": 0.00001761424374678498
     },
     {
@@ -74,7 +76,7 @@
       "overflow": false,
       "h1": 1,
       "headerOverlap": false,
-      "lcp": 104,
+      "lcp": 68,
       "cls": 0
     },
     {
@@ -83,8 +85,8 @@
       "overflow": false,
       "h1": 1,
       "headerOverlap": false,
-      "lcp": 124,
-      "cls": 0
+      "lcp": 92,
+      "cls": 0.000030902919501133786
     },
     {
       "slug": "insights/lei-15100-2025-celulares-escolas",
@@ -92,7 +94,7 @@
       "overflow": false,
       "h1": 1,
       "headerOverlap": false,
-      "lcp": 80,
+      "lcp": 76,
       "cls": 0.00001761424374678498
     }
   ],
@@ -100,19 +102,19 @@
     {
       "width": 390,
       "lcpMs": 392,
-      "cls": 0.017635470085470083,
+      "cls": 0.017674161621557452,
       "conditions": "Local Edge, sem limitação de CPU/rede; observação curta; não representa Core Web Vitals de campo."
     },
     {
       "width": 1050,
-      "lcpMs": 124,
+      "lcpMs": 132,
       "cls": 0.00004759542705971277,
       "conditions": "Local Edge, sem limitação de CPU/rede; observação curta; não representa Core Web Vitals de campo."
     },
     {
       "width": 1440,
-      "lcpMs": 132,
-      "cls": 0.000029058235074266976,
+      "lcpMs": 108,
+      "cls": 0.00002555097415123457,
       "conditions": "Local Edge, sem limitação de CPU/rede; observação curta; não representa Core Web Vitals de campo."
     }
   ]

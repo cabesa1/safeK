@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os'),{spawnSync}=require('node:child_process');
 const {chromium}=require(process.env.SAFEK_PLAYWRIGHT||'playwright');
 const root=path.resolve(__dirname,'..'),out=path.join(root,'qa/insights');fs.mkdirSync(out,{recursive:true});
-const {configuration}=require('../src/site-config.cjs'),{all,validate,route}=require('../src/insights.cjs');
+const {configuration}=require('../src/site-config.cjs'),{all,validate,route,loadInsights}=require('../src/insights.cjs');
 const run=(file,env)=>{const r=spawnSync(process.execPath,[file],{cwd:root,env:{...process.env,...env},encoding:'utf8'});assert.equal(r.status,0,r.stdout+r.stderr);return r.stdout;};
 (async()=>{
  assert.equal(configuration({SEO_ALLOW_INDEXING:'true'}).indexable,false);
@@ -9,9 +9,14 @@ const run=(file,env)=>{const r=spawnSync(process.execPath,[file],{cwd:root,env:{
  assert.equal(configuration({SAFEK_SITE_ENV:'production',SEO_ALLOW_INDEXING:'true'}).indexable,true);
  assert.equal(configuration({VERCEL:'1'}).includeDrafts,false);
  assert.throws(()=>configuration({SEO_SITE_URL:'https://www.safek.com.br'}));
- for(const a of all){assert.equal(a.author.name,'Equipe SAFE-K');assert.equal(a.status,'draft');assert.throws(()=>validate({...a,status:'published'}));}
+ const published=all.filter(a=>a.status==='published');
+ for(const a of all){assert.equal(a.author.name,'Equipe SAFE-K');validate(a);assert.throws(()=>validate({...a,status:'published',approvedForPublication:false}));assert.throws(()=>validate({...a,status:'published',publishedAt:null}));}
+ const draftDirectory=fs.mkdtempSync(path.join(os.tmpdir(),'safek-draft-fixture-'));
+ fs.writeFileSync(path.join(draftDirectory,'draft.json'),JSON.stringify({...all[0],status:'draft',approvedForPublication:false,publishedAt:null,modifiedAt:null}));
+ assert.equal(loadInsights({directory:draftDirectory,includeDrafts:false}).length,0);
+ assert.equal(loadInsights({directory:draftDirectory,includeDrafts:true}).length,1);
  const deploymentConfig=JSON.parse(fs.readFileSync(path.join(root,'vercel.json'),'utf8'));
- for(const a of all)assert(!deploymentConfig.redirects.some(r=>r.destination==='/'+route(a)+'.html'),'checked-in redirect exposes a draft-only destination');
+ for(const a of all.filter(a=>a.status==='draft'))assert(!deploymentConfig.redirects.some(r=>r.destination==='/'+route(a)+'.html'),'checked-in redirect exposes a draft-only destination');
  // Isolated fixture proves the published schema branch without publishing real articles.
  const original={...all[0]};
  try{
@@ -26,11 +31,12 @@ const run=(file,env)=>{const r=spawnSync(process.execPath,[file],{cwd:root,env:{
  const env={SAFEK_BUILD_DIR:temporary,SAFEK_SITE_ENV:'production',SEO_ALLOW_INDEXING:'true',SAFEK_ANALYTICS_ENABLED:'false'};
  run('build.cjs',env);run('tools/build-static.cjs',env);run('tools/check-seo.cjs',env);
  const production=JSON.parse(fs.readFileSync(path.join(temporary,'research/build-manifest.json'),'utf8'));
- assert.equal(production.pages.length,16);assert.equal(production.indexablePages.length,15);
- for(const a of all)assert(!fs.existsSync(path.join(temporary,'dist',route(a)+'.html')),'draft leaked');
- const prodHome=fs.readFileSync(path.join(temporary,'dist/index.html'),'utf8');assert(prodHome.includes('href="https://safek.com.br/"'));assert(!prodHome.includes('href="insights.html"'));
+ assert.equal(production.pages.length,16+published.length);assert.equal(production.indexablePages.length,15+published.length+(published.length?1:0));
+ for(const a of all)assert.equal(fs.existsSync(path.join(temporary,'dist',route(a)+'.html')),a.status==='published','article publication policy');
+ const prodHome=fs.readFileSync(path.join(temporary,'dist/index.html'),'utf8');assert(prodHome.includes('href="https://safek.com.br/"'));assert.equal(prodHome.includes('href="insights.html"'),published.length>0);
+ for(const a of published){const html=fs.readFileSync(path.join(temporary,'dist',route(a)+'.html'),'utf8');const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1]);const schema=graph['@graph'].find(n=>n['@type']==='BlogPosting');assert.equal(schema.datePublished,a.publishedAt);assert.equal(schema.author.name,a.author.name);assert(fs.readFileSync(path.join(temporary,'sitemap.xml'),'utf8').includes('/'+route(a)+'.html'));}
  const browser=await chromium.launch({channel:'msedge',headless:true});
- const results={productionBuildDirectory:temporary,productionPages:16,productionIndexable:15,unpublishedArticlesExcluded:true,analytics:{},visual:[],performance:[]};
+ const results={productionBuildDirectory:temporary,productionPages:production.pages.length,productionIndexable:production.indexablePages.length,publishedArticles:published.length,unpublishedArticlesExcluded:true,draftFixtureExcluded:true,analytics:{},visual:[],performance:[]};
  try{
   const context=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'});
   const page=await context.newPage(),requests=[];page.on('request',r=>{if(/google-analytics|googletagmanager/.test(r.url()))requests.push(r.url());});

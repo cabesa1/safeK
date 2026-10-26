@@ -210,6 +210,36 @@
       "source": "/dentro-do-juke-joint-perfeito-e-misterioso-de-dave-chappelle-no-all-star-weekend/",
       "destination": "/presenca-nos-shows.html",
       "permanent": true
+    },
+    {
+      "source": "/insights/lei-15100-2025-celulares-escolas",
+      "destination": "/insights/lei-15100-2025-celulares-escolas.html",
+      "permanent": true
+    },
+    {
+      "source": "/insights/lei-15100-2025-celulares-escolas/",
+      "destination": "/insights/lei-15100-2025-celulares-escolas.html",
+      "permanent": true
+    },
+    {
+      "source": "/insights/politica-uso-celulares-escola",
+      "destination": "/insights/politica-uso-celulares-escola.html",
+      "permanent": true
+    },
+    {
+      "source": "/insights/politica-uso-celulares-escola/",
+      "destination": "/insights/politica-uso-celulares-escola.html",
+      "permanent": true
+    },
+    {
+      "source": "/insights/reduzir-distracoes-digitais-sala-aula",
+      "destination": "/insights/reduzir-distracoes-digitais-sala-aula.html",
+      "permanent": true
+    },
+    {
+      "source": "/insights/reduzir-distracoes-digitais-sala-aula/",
+      "destination": "/insights/reduzir-distracoes-digitais-sala-aula.html",
+      "permanent": true
     }
   ]
 }

@@ -1,5 +1,9 @@
 # SAFE-K — implementação SEO, GEO, Insights e pré-migração
 
+## Atualização editorial — 26/10/2026
+
+Após o primeiro deploy, o usuário aprovou expressamente os três artigos e pediu sua presença online. Os três passaram de draft para published, com autoria Equipe SAFE-K e publicação/modificação em 26/10/2026. Insights passa a aparecer na navegação, listagem e links de escolas. Cada artigo passa a ter BlogPosting e datas visíveis. Os testes de produção simulada passam a esperar 19 páginas e 19 URLs elegíveis no sitemap futuro, em vez de 16/15. No ambiente Vercel atual o site permanece staging/noindex e o sitemap continua vazio. Não houve autorização para mudar domínio/DNS, ativar analytics ou inventar credenciais/prova social. As seções abaixo registram o lote original e suas pendências na ocasião; a pendência de aprovação destes três artigos está resolvida.
+
 Revisão local em 26/10/2026. Não houve commit, push, deploy, alteração de domínio/DNS, submissão a buscadores ou modificação do WordPress antigo. Este relatório substitui as orientações de ambiente dos relatórios anteriores.
 
 ## A. SEO técnico
